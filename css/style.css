@@ -66,7 +66,10 @@ body {
 .nav-link:hover {
   color: var(--main-color);
 }
-
+/* About */
+#What-We-Do:target ~ .navbar a[href="#What-We-Do"] {
+  color: red;
+}
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 15px;
   padding-left: var(--bs-navbar-nav-link-padding-x);
