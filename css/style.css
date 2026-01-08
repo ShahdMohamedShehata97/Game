@@ -138,14 +138,14 @@ body {
 }
 
 #Home {
-  min-height: 100vh;
+  min-height: 80vh;
 
   background-image: url("../images/hero-bg.jpg");
   /* background-color: #CBFE1C; */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  /* z-index: 10; */
+  /* z-index: 0; */
 }
 
 .hero-item {
@@ -223,9 +223,7 @@ h1 {
     var(--main-color) 86%,
     var(--main-color) 100%
   );
-  /* box-shadow: 1px 1px 100px 4px var(--main-color); */
-  /* left: 550px; */
-   /* transform: translateX(-120%); */
+ 
    left: 46.5%;
   transform: translateX(-170%);
   top: 10px;
@@ -244,18 +242,12 @@ h1 {
     var(--main-color) 80%,
     rgba(2, 0, 36, 1) 100%
   );
-  /* box-shadow: 1px 1px 100px 4px var(--main-color); */
-  /* right: 550px; */
+  
    left: 53.5%;
   transform: translateX(70%);
   top: 10px;
 }
 
-
-/* .carsoul-buttons{
-  display: flex;
-  justify-content: center;
-} */
 
 .next,
 .prev {
@@ -265,17 +257,8 @@ h1 {
   height: 50px;
   border-radius: 50%;
   border: 3px solid gray;
-  /* position: absolute;
-  top: 440px;
-  bottom: 0;
-  z-index: 1; */
-  /* left: 550px; */
   transition: border-color 0.5s, color 0.5s;
 }
-
-/* .prev {
-  left: 470px;
-} */
 
 .next:hover,
 .prev:hover {
@@ -486,7 +469,7 @@ h1 {
   inset: 0;
   background: radial-gradient(
     ellipse 40% 100% at 50% 50%,
-    /* عرض أقل + طول أكبر */ var(--main-color) 0%,
+     var(--main-color) 0%,
     var(--main-color) 30%,
     rgba(5, 7, 12, 0.9) 65%,
     #05070c 100%
@@ -528,7 +511,7 @@ h1 {
   transform: rotate(90deg);
 }
 .team-img img {
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%); 
   filter: grayscale(100%);
 }
 .team-overlay {
@@ -574,12 +557,12 @@ h1 {
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 .team-img:hover img {
-  filter: grayscale(0); /* الصورة ترجع ألوان */
+  filter: grayscale(0); 
 }
 
 .team-img:hover .team-overlay {
-  transform: translateY(-100%); /* يطلع لفوق */
-  opacity: 0; /* ويختفي */
+  transform: translateY(-100%); 
+  opacity: 0; 
 }
 
 .team-img:hover .team-right {
